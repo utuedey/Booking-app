@@ -17,6 +17,8 @@ func main() {
 	var email string
 	var userTickets uint
 
+	var bookings [50]string // Array declaration
+
 	// ask user for their name
 	// &userName is pointer that references the variable userName
 
@@ -33,6 +35,13 @@ func main() {
 	fmt.Scan(&userTickets)
 
 	remainingTickets = remainingTickets - userTickets
+
+	bookings[0] = firstName + " " + lastName
+
+	fmt.Printf("The whole Array: %v\n", bookings)
+	fmt.Printf("The first value: %v\n", bookings[0])
+	fmt.Printf("Array Type: %T\n", bookings)
+	fmt.Printf("Array size: %v\n", len(bookings))
 
 	fmt.Printf("Thank you %v %v for booking %v tickets. You will recieve a confirmation email at %v\n", firstName, lastName, userTickets, email)
 	fmt.Printf("%v has %v tickets left", conferenceName, remainingTickets)

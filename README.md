@@ -39,6 +39,10 @@ But, Go can infer the type when you assign a value
 
 - A pointer is a variable that points to the memory address of another variable
 
+## Slices in Go
+- Slice is an abstraction of an Array
+- Slices are more flexible and powerful: variable-length or get an sub-array of its own
+- slices are also index-based and have a size, but is resized when needed
 ## Notes
 
 All our code must belong to a package
