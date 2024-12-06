@@ -21,8 +21,10 @@ your module to  (e.g. github.com/utuedey/booking-app)
 `var conferenceName = "Go Conference"`
 
 - fmt.Printf is used to print formatted output
+
 ```
 fmt.Printf("welcome to %v booking application\n", conferenceName)
+```
 
 ## Data Types in Go
 - Strings
@@ -43,12 +45,39 @@ But, Go can infer the type when you assign a value
 - Slice is an abstraction of an Array
 - Slices are more flexible and powerful: variable-length or get an sub-array of its own
 - slices are also index-based and have a size, but is resized when needed
+
+*syntax for creating a slice*
+
+`var bookings []string` or `var bookings = []string{}`
+
+*package level variables*
+
+- Defined at the top outside all functions
+- They can be accessed inside any of the functions
+
+*maps*
+- Declaration: map[string][string]
+
+*struct*
+
+```Go
+type userData struct {
+    firstName string
+    lastName string
+    email string
+    numberOfTickets uint
+
+}
+```
+
 ## Notes
 
 All our code must belong to a package
 The first statement in Go file must be "package...."
 
 The `main` function is the entrypoint of a Go program and also A program can only have 1 main function because you can only have 1 entry point
+
+- Blank identifier is use to ignore a variable that is not in use (for _, booking)
 
 ## Go Packages
 A package is a collection of source files - Go programs are organized into packages.
