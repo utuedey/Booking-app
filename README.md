@@ -70,6 +70,16 @@ type userData struct {
 }
 ```
 
+*Concurrency*
+- go...starts a new goroutine
+- A goroutine is a lightweight thread managed by the Go runtime.
+
+*Waitgroup*
+- Waits for the launched goroutine to finish
+- Package "sync" provides basic synchronization functionality
+- Add: Sets the number of goroutines to wait for 
+- Wait: Blocks until the WaitGroup counter is 0
+
 ## Notes
 
 All our code must belong to a package
