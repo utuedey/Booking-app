@@ -18,7 +18,7 @@ your module to  (e.g. github.com/utuedey/booking-app)
 
 - Variables are used to store values and how to declare variables below
 
-`var conferenceName = "Go Conference"`
+`var conferenceName := "Go Conference"`
 
 - fmt.Printf is used to print formatted output
 
